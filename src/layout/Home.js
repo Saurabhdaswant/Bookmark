@@ -1,4 +1,3 @@
-import { useState } from "react"
 import "../Sass/Home.scss"
 
 function Home() {
