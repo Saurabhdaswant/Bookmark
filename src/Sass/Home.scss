@@ -1,0 +1,33 @@
+@import "variable";
+
+.Home{
+
+    header{
+
+        display: flex;
+        justify-content: space-between;
+
+        padding-top: 2rem;
+
+        nav{
+            display: flex; 
+            align-items: center;
+
+            ul{
+                display: none;
+
+                @media (min-width: 800px) {
+                display: flex;
+                justify-content: space-between;
+
+                gap: 4rem;
+                margin-right: 4rem;
+                }
+            }
+
+            button{
+                background-color: $veryDarkBlue;
+            }
+        }
+    }
+}

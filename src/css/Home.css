@@ -1,0 +1,40 @@
+.Home header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-top: 2rem;
+}
+
+.Home header nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.Home header nav ul {
+  display: none;
+}
+
+@media (min-width: 800px) {
+  .Home header nav ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    gap: 4rem;
+    margin-right: 4rem;
+  }
+}
+
+.Home header nav button {
+  background-color: #252b46;
+}
+/*# sourceMappingURL=Home.css.map */
