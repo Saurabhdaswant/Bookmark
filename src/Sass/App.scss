@@ -61,7 +61,7 @@ form,
 label,
 legend {
   vertical-align: baseline;
-  font-family: "Rubik", sans-serif;
+  font-family: $fontFamily;
   font-weight: inherit;
   font-style: inherit;
   font-size: 100%;
@@ -111,3 +111,51 @@ q {
   max-width: 1600px;
   margin: 0 auto;
 }
+
+
+.btn{
+  padding: 0.5rem 1.5rem;
+
+  border: 3px solid transparent;
+  border-radius: 5px;
+
+  font-family: $fontFamily;
+  font-weight: 500;
+
+  color: $veryDarkBlue;
+  box-shadow: 0 3px 2px 0 rgba(0,0,0,.15);
+
+  transition: all 0.5s ease;
+
+  &:hover{
+    background-color: transparent;
+    cursor: pointer;
+  }
+
+  &--softRed{
+    color: $white;
+    background-color: $softRed;
+    box-shadow: 0 3px 2px 0 rgba(248, 235, 235, 0.918);
+
+
+    &:hover{
+      color: $softRed;
+      border: 3px solid $softRed;
+    }
+  
+    &--capitalize{
+      text-transform: uppercase;
+    }
+  }
+
+  &--softBlue{
+    color: $veryDarkBlue;
+    background-color: $softBlue;
+
+    &:hover{
+      color: $softBlue;
+      border: 3px solid $softBlue;
+    }
+  }
+}
+

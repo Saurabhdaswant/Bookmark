@@ -1,4 +1,5 @@
 import "../Sass/Home.scss"
+import "../Sass/App.scss"
 
 function Home() {
     return (
@@ -11,7 +12,7 @@ function Home() {
                         <li><a href="#Extension">Extension</a></li>
                         <li><a href="#FAQ">FAQ</a></li>
                     </ul>
-                    <button>login</button>
+                    <button className="btn btn--softRed btn--softRed--capitalize" >login</button>
                 </nav>
             </header>
         </div>

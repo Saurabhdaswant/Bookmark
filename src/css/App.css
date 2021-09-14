@@ -115,4 +115,48 @@ q {
   max-width: 1600px;
   margin: 0 auto;
 }
+
+.btn {
+  padding: 0.5rem 1.5rem;
+  border: 3px solid transparent;
+  border-radius: 5px;
+  font-family: "Rubik", sans-serif;
+  font-weight: 500;
+  color: #252b46;
+  -webkit-box-shadow: 0 3px 2px 0 rgba(0, 0, 0, 0.15);
+          box-shadow: 0 3px 2px 0 rgba(0, 0, 0, 0.15);
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.btn:hover {
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.btn--softRed {
+  color: #ffffff;
+  background-color: #fa5757;
+  -webkit-box-shadow: 0 3px 2px 0 rgba(248, 235, 235, 0.918);
+          box-shadow: 0 3px 2px 0 rgba(248, 235, 235, 0.918);
+}
+
+.btn--softRed:hover {
+  color: #fa5757;
+  border: 3px solid #fa5757;
+}
+
+.btn--softRed--capitalize {
+  text-transform: uppercase;
+}
+
+.btn--softBlue {
+  color: #252b46;
+  background-color: #5368df;
+}
+
+.btn--softBlue:hover {
+  color: #5368df;
+  border: 3px solid #5368df;
+}
 /*# sourceMappingURL=App.css.map */
