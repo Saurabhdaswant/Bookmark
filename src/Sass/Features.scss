@@ -15,8 +15,37 @@
         }
     }
 
-    // &__main{
-    // }
+    &__main{
+
+        &__theFeature{
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+
+            & p{
+                text-transform: capitalize;
+                line-height: 3;
+                color: $veryDarkBlue;
+                border-top: 2px solid $grayishBlue;
+                font-weight: $bold;
+                cursor: pointer;
+
+                &:hover{
+                    border-bottom: 4px solid $softRed;
+                }
+
+                &:nth-child(3){
+                    border-bottom: 2px solid $grayishBlue;
+                }
+
+            }
+        }
+
+    &__details__img svg{
+        width: 20rem;
+        height: 20rem;
+    }
+    }
 
 
 }
