@@ -1,0 +1,27 @@
+@import "variable";
+
+.features{
+
+    @include Flexing;
+    margin: 10rem 0;
+
+    &__about {
+        h1{
+            @include heading;
+        }
+        p{
+            margin: 1rem 0;
+            @include paragraph;
+        }
+    }
+
+    &__main{
+    }
+
+
+}
+
+
+.features__main__details__img__rounded{
+    @include rounded;
+}
