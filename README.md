@@ -33,9 +33,9 @@ fotter : p + heading + input + btn
 
 fuck this
 
-3 CSS Techniques That Gary simon Use the MOST!
+## 3 CSS Techniques That Gary simon Use the MOST!
 
-## creating whitespace with ease using vw
+### creating whitespace with ease using vw
 
 div{
   margin:10vw;
@@ -55,7 +55,7 @@ html{
 
 now change only the html fontsize on diffreent media querry
 
-## fluid any element i think this is what i was searching for 😱
+### fluid any element i think this is what i was searching for 😱
 
 div{
 font-size:clamp(min, preferred,max)
