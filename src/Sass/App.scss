@@ -120,13 +120,14 @@ a{
 
 
 .btn{
-  padding: 0.5rem 1.5rem;
+  // padding: 0.5rem 1.5rem;
+  padding: 0.8rem 1rem;
 
-  border: 3px solid transparent;
+  border: 3px solid #EFEFEF;
   border-radius: 5px;
 
   font-family: $fontFamily;
-  font-weight: 500;
+  font-weight: $bold;
 
   color: $veryDarkBlue;
   box-shadow: 0 3px 2px 0 rgba(0,0,0,.15);
@@ -134,14 +135,17 @@ a{
   transition: all 0.5s ease;
 
   &:hover{
-    background-color: transparent;
     cursor: pointer;
+    color: $veryDarkBlue;
+    background-color: transparent;
+    border: 3px solid $veryDarkBlue;
   }
 
   &--softRed{
     color: $white;
     background-color: $softRed;
     box-shadow: 0 3px 2px 0 rgba(248, 235, 235, 0.918);
+    border: 3px solid $softRed;
 
 
     &:hover{
@@ -157,6 +161,7 @@ a{
   &--softBlue{
     color: $veryDarkBlue;
     background-color: $softBlue;
+    border: 3px solid $softBlue;
 
     &:hover{
       color: $softBlue;
@@ -165,3 +170,15 @@ a{
   }
 }
 
+
+
+.rounded{
+  width: 300px;
+  height: 170px;
+
+  background-color: $softBlue;
+
+  border-start-start-radius: 50rem;
+  border-bottom-left-radius: 50rem;
+
+}

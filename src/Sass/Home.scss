@@ -1,26 +1,25 @@
 @import "variable";
 
-.Home{
-
-    header{
-
+.Home {
+    header {
         display: flex;
         justify-content: space-between;
 
         padding-top: 2rem;
 
-        nav{
-            display: flex; 
+        nav {
+            display: flex;
             align-items: center;
 
-            ul{
-                display: none;
+            ul {
+            display: none;
 
-                a{
+                a {
                     color: $veryDarkBlue;
-                }
-                a:hover{
-                    color: $softRed;
+
+                    &:hover{
+                        color: $softRed;
+                    }
                 }
 
                 @media (min-width: 800px) {
@@ -34,28 +33,47 @@
         }
     }
 
-    .about{
+    section {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .about {
         display: flex;
         flex-direction: column;
         align-items: center;
         text-align: center;
 
-        margin-top: 5rem;
         gap: 2rem;
-        h1{
+        h1 {
             font-size: 2rem;
             font-weight: $bold;
             color: $veryDarkBlue;
             line-height: 1.3;
         }
-        p{
+        p {
             color: $grayishBlue;
             line-height: 1.5;
         }
-        &__cta{
+        &__cta {
             display: flex;
             gap: 1rem;
         }
     }
-}
+        .bookmarkBanner {
+            height: 20rem;
+            // overflow: hidden;
 
+            svg {
+                width: 20rem;
+                height: 20rem;
+            }
+
+            .rounded {
+                position: relative;
+                bottom: 13rem;
+                left: 3rem;
+                z-index: -5;
+            }
+        }
+}
