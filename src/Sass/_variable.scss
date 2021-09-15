@@ -7,3 +7,31 @@ $fontFamily:"Rubik", sans-serif;
 $bold:500;
 $semiBold:400;
 
+
+@mixin heading {
+    font-size: 2rem;
+    font-weight: $bold;
+    color: $veryDarkBlue;
+    line-height: 1.3;
+  }
+
+  @mixin paragraph {
+    color: $grayishBlue;
+    line-height: 1.5;
+  }
+
+  @mixin rounded {
+    position: relative;
+    bottom: 13rem;
+    left: 3rem;
+    z-index: -5;
+  }
+
+  @mixin  Flexing {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  
