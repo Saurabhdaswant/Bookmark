@@ -116,9 +116,14 @@ q {
   margin: 0 auto;
 }
 
+a {
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
 .btn {
-  padding: 0.5rem 1.5rem;
-  border: 3px solid transparent;
+  padding: 0.8rem 1rem;
+  border: 3px solid #EFEFEF;
   border-radius: 5px;
   font-family: "Rubik", sans-serif;
   font-weight: 500;
@@ -130,8 +135,10 @@ q {
 }
 
 .btn:hover {
-  background-color: transparent;
   cursor: pointer;
+  color: #252b46;
+  background-color: transparent;
+  border: 3px solid #252b46;
 }
 
 .btn--softRed {
@@ -139,6 +146,7 @@ q {
   background-color: #fa5757;
   -webkit-box-shadow: 0 3px 2px 0 rgba(248, 235, 235, 0.918);
           box-shadow: 0 3px 2px 0 rgba(248, 235, 235, 0.918);
+  border: 3px solid #fa5757;
 }
 
 .btn--softRed:hover {
@@ -153,10 +161,19 @@ q {
 .btn--softBlue {
   color: #252b46;
   background-color: #5368df;
+  border: 3px solid #5368df;
 }
 
 .btn--softBlue:hover {
   color: #5368df;
   border: 3px solid #5368df;
+}
+
+.rounded {
+  width: 300px;
+  height: 170px;
+  background-color: #5368df;
+  border-start-start-radius: 50rem;
+  border-bottom-left-radius: 50rem;
 }
 /*# sourceMappingURL=App.css.map */
