@@ -23,9 +23,9 @@ function Features() {
                         <div className="rounded rounded--right"></div>
                     </div>
                     <div className="features__main__details__about">
-                        <h1>h2</h1>
-                        <p></p>
-                        <button>shome more</button>
+                        <h1 >Bookmark in one click</h1>
+                        <p>Organize your bookmarks however you like Our simple drag-and-drop interface gives you complete control over how you manage your favourited sites.</p>
+                        <button className="btn btn--softBlue" >Show More</button>
                     </div>
                 </div>
             </div>
