@@ -21,6 +21,14 @@
   display: none;
 }
 
+.Home header nav ul a {
+  color: #252b46;
+}
+
+.Home header nav ul a:hover {
+  color: #fa5757;
+}
+
 @media (min-width: 800px) {
   .Home header nav ul {
     display: -webkit-box;
@@ -32,5 +40,65 @@
     gap: 4rem;
     margin-right: 4rem;
   }
+}
+
+.Home section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
+}
+
+.Home .about {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  gap: 2rem;
+}
+
+.Home .about h1 {
+  font-size: 2rem;
+  font-weight: 500;
+  color: #252b46;
+  line-height: 1.3;
+}
+
+.Home .about p {
+  color: #9194a1;
+  line-height: 1.5;
+}
+
+.Home .about__cta {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 1rem;
+}
+
+.Home .bookmarkBanner {
+  height: 20rem;
+}
+
+.Home .bookmarkBanner svg {
+  width: 20rem;
+  height: 20rem;
+}
+
+.Home .bookmarkBanner .rounded {
+  position: relative;
+  bottom: 13rem;
+  left: 3rem;
+  z-index: -5;
 }
 /*# sourceMappingURL=Home.css.map */
