@@ -23,7 +23,7 @@ function Features() {
                         <div className="features__main__details__img__rounded"></div>
                     </div>
                     <div className="features__main__details__about">
-                        <h1></h1>
+                        <h1>h2</h1>
                         <p></p>
                         <button>shome more</button>
                     </div>
