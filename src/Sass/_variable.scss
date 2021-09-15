@@ -25,6 +25,14 @@ $semiBold:400;
     bottom: 13rem;
     left: 3rem;
     z-index: -5;
+
+    width: 300px;
+    height: 170px;
+  
+    background-color: $softBlue;
+  
+    border-start-start-radius: 50rem;
+    border-bottom-left-radius: 50rem;
   }
 
   @mixin  Flexing {
