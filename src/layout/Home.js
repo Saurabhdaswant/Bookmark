@@ -33,9 +33,9 @@ function Home() {
               <a href="#FAQ">FAQ</a>
             </li>
           </ul>
-          <button className="btn btn--softRed btn--softRed--capitalize">
+          {/* <button className="btn btn--softRed btn--softRed--capitalize">
             login
-          </button>
+          </button> */}
         </nav>
       </header>
       <section>
@@ -57,6 +57,7 @@ function Home() {
             xmlnsXlink="http://www.w3.org/1999/xlink"
             width="657"
             height="466"
+            viewBox="0 0 657 466"
           >
             <defs>
               <filter
@@ -332,6 +333,7 @@ function Home() {
               </g>
             </g>
           </svg>
+          <div className="rounded"></div>
         </div>
       </section>
     </div>
