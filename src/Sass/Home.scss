@@ -16,6 +16,13 @@
             ul{
                 display: none;
 
+                a{
+                    color: $veryDarkBlue;
+                }
+                a:hover{
+                    color: $softRed;
+                }
+
                 @media (min-width: 800px) {
                 display: flex;
                 justify-content: space-between;
