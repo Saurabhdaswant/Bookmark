@@ -9,21 +9,23 @@ $semiBold:400;
 
 
 @mixin h1 {
-    font-size: 2rem;
+    font-size: clamp(2rem , 6.5vw , 3rem)  ;
     font-weight: $bold;
     color: $veryDarkBlue;
     line-height: 1.3;
   }
 
   @mixin  h2 {
-    font-size: 1.5rem;
+    font-size: clamp(1.5rem , 5vw , 2rem)  ;
   }
 
 
   @mixin paragraph {
     color: $grayishBlue;
     line-height: 1.5;
-    margin: 1rem 0;
+    margin: 1rem 0 ;
+
+    font-size: clamp(1rem , 4.5vw , 1.5rem)  ;
   }
 
   @mixin rounded {
