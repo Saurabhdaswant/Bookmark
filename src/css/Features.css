@@ -14,16 +14,18 @@
 }
 
 .features__about h1 {
-  font-size: 2rem;
+  font-size: clamp(2rem, 6.5vw, 3rem);
   font-weight: 500;
   color: #252b46;
   line-height: 1.3;
+  font-size: clamp(1.5rem, 5vw, 2rem);
 }
 
 .features__about p {
-  margin: 1rem 0;
   color: #9194a1;
   line-height: 1.5;
+  margin: 1rem 0;
+  font-size: clamp(1rem, 4.5vw, 1.5rem);
 }
 
 .features__main__theFeature {
@@ -64,15 +66,18 @@
 }
 
 .features__main__details__about h1 {
-  font-size: 2rem;
+  font-size: clamp(2rem, 6.5vw, 3rem);
   font-weight: 500;
   color: #252b46;
   line-height: 1.3;
+  font-size: clamp(1.5rem, 5vw, 2rem);
 }
 
 .features__main__details__about p {
   color: #9194a1;
   line-height: 1.5;
+  margin: 1rem 0;
+  font-size: clamp(1rem, 4.5vw, 1.5rem);
   margin-bottom: 1rem;
 }
 

@@ -19,9 +19,7 @@ threeFeatures : topNav > threeChild + bottomDetail > featureImg + Detail > headi
 
 ## DownLoad the Extension
 
-DTE : head > heading + text with main > threCards
-threCards : contect + cta
-contect : img + 3 + p
+DTE > div[h1, p] + div[div div div ] 
 
 ## FAQ
 
