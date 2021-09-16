@@ -44,9 +44,9 @@
     .about {
         @include Flexing;
 
-        gap: 2rem;
+        gap: 1rem;
         h1{
-            @include heading
+            @include h1;
         }
         p{
             @include paragraph
