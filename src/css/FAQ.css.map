@@ -1,0 +1,10 @@
+{
+    "version": 3,
+    "mappings": "AAGK,AACG,UADG,CACH,EAAE,CAAA;ECON,SAAS,EAAE,wBAA0B;EACrC,WAAW,EANT,GAAG;EAOL,KAAK,EAVM,OAAkB;EAW7B,WAAW,EAAE,GAAG;CDRX",
+    "sources": [
+        "../Sass/FAQ.scss",
+        "../Sass/_variable.scss"
+    ],
+    "names": [],
+    "file": "FAQ.css"
+}

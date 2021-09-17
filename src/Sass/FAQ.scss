@@ -1,0 +1,12 @@
+@import "variable";
+
+.Faq{
+    &__head{
+        h1{
+            @include h1;
+        }
+        p{
+            @include p;
+        }
+    }
+}
