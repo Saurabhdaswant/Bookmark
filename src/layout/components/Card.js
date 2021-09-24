@@ -1,5 +1,3 @@
-
-
 function Card({item}) {
     const {extension , version , img} = item;
     return (
