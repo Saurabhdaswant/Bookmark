@@ -4,12 +4,15 @@
     @include Flexing;
     h1{
         @include h1;
+        @include h2;
     }
     p{
         @include paragraph;
     }
     h2{
-        @include h2;
+        font-size: 1.5rem;
+        color: $veryDarkBlue;
+        font-weight: $bold;
     }
 
     &__main__card{
