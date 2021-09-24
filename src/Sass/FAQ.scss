@@ -2,11 +2,46 @@
 
 .Faq{
     &__head{
+
+        @include Flexing;
         h1{
             @include h1;
+            @include h2;
         }
         p{
-            @include p;
+            @include paragraph;
         }
     }
+
+    .Faq__main__faqCard{
+        .faqCard__question{
+
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+                p{
+                    @include h1;
+                    font-size: 1rem;
+                }
+
+                button{
+                    background: transparent;
+                    color: $softBlue;
+                    font-weight: 500;
+                    border: none;
+                    font-size: 1.5rem;
+                    cursor: pointer;
+                }
+            }
+
+            .faqCard__answer{
+                p{
+                    @include paragraph;
+                }
+        }
+
+        border-bottom: 1px solid #f1f1f1da ;
+        margin-bottom: 1rem;
+    }
 }
+

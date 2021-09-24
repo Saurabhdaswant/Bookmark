@@ -17,6 +17,7 @@
   font-weight: 500;
   color: #252b46;
   line-height: 1.3;
+  font-size: clamp(1.5rem, 5vw, 2rem);
 }
 
 .extension p {
@@ -27,7 +28,9 @@
 }
 
 .extension h2 {
-  font-size: clamp(1.5rem, 5vw, 2rem);
+  font-size: 1.5rem;
+  color: #252b46;
+  font-weight: 500;
 }
 
 .extension__main__card {

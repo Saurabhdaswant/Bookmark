@@ -1,7 +1,50 @@
+.Faq__head {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
 .Faq__head h1 {
   font-size: clamp(2rem, 6.5vw, 3rem);
   font-weight: 500;
   color: #252b46;
   line-height: 1.3;
+  font-size: clamp(1.5rem, 5vw, 2rem);
+}
+
+.Faq__head p {
+  color: #9194a1;
+  line-height: 1.5;
+  margin: 1rem 0;
+  font-size: clamp(1rem, 4.5vw, 1.5rem);
+}
+
+.Faq .Faq__main__faqCard__question p {
+  font-size: clamp(2rem, 6.5vw, 3rem);
+  font-weight: 500;
+  color: #252b46;
+  line-height: 1.3;
+  font-size: 1rem;
+}
+
+.Faq .Faq__main__faqCard__question button {
+  background: transparent;
+  color: #fa5757;
+  font-weight: 500;
+}
+
+.Faq .Faq__main__faqCard__answer p {
+  color: #9194a1;
+  line-height: 1.5;
+  margin: 1rem 0;
+  font-size: clamp(1rem, 4.5vw, 1.5rem);
 }
 /*# sourceMappingURL=FAQ.css.map */
