@@ -1,81 +1,68 @@
 @import "variable";
 
-.features{
-    width: 90%;
-    max-width: 1600px;
-    margin: 10rem auto;
+.features {
+  width: 90%;
+  max-width: 1600px;
+  margin: 10rem auto;
+  @include Flexing;
 
-    @include Flexing;
+  &__about {
+    h1 {
+      @include h1;
+      @include h2;
+    }
+    p {
+      @include paragraph;
+    }
+  }
 
-    &__about {
-        h1{
-            @include h1;
-            @include h2;
+  &__main {
+    &__theFeature {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+
+      & p {
+        text-transform: capitalize;
+        line-height: 3;
+        color: $veryDarkBlue;
+        border-top: 2px solid $grayishBlue;
+        font-weight: $bold;
+        cursor: pointer;
+
+        &:hover {
+          border-bottom: 4px solid $softRed;
         }
-        p{
 
-            @include paragraph;
+        &:nth-child(3) {
+          border-bottom: 2px solid $grayishBlue;
         }
+      }
     }
 
-    &__main{
-        &__theFeature{
-
-            
-            display: flex;
-            flex-direction: column;
-            text-align: center;
-
-            & p{
-                text-transform: capitalize;
-                line-height: 3;
-                color: $veryDarkBlue;
-                border-top: 2px solid $grayishBlue;
-                font-weight: $bold;
-                cursor: pointer;
-
-                &:hover{
-                    border-bottom: 4px solid $softRed;
-                }
-
-                &:nth-child(3){
-                    border-bottom: 2px solid $grayishBlue;
-                }
-
-            }
-        }
-
-&__details{
-
-    &__img {
-
+    &__details {
+      &__img {
         height: 25rem;
-        svg{
-            width: 20rem;
-            height: 20rem;
+        svg {
+          width: 20rem;
+          height: 20rem;
         }
+      }
+
+      &__about {
+        h1 {
+          @include h1;
+          @include h2;
+        }
+        p {
+          @include paragraph;
+          margin-bottom: 1rem;
+        }
+      }
     }
-
-    &__about{
-
-        h1{
-            @include h1;
-            @include h2;
-        }
-        p{
-            @include paragraph;
-            margin-bottom: 1rem
-        }
-    }   
+  }
 }
 
-    
-    }
-
-
-}
-
-
-.features__main__details__img__rounded{
-    @include rounded;
+.features__main__details__img__rounded {
+  @include rounded;
 }
