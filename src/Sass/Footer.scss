@@ -1,73 +1,97 @@
 @import "variable";
 
-.Footer{
-    padding: 1rem;
-    max-width: 1600px;
-    margin: 0 auto;
+.Footer {
+  padding: 1rem;
+  max-width: 1600px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  background-color: $softBlue;
 
-    
-    display: flex;
-    text-align: center;
-    background-color: $softBlue;
-
-    p{
-        @include paragraph;
-        color: $white;
-        // text-transform: uppercase;
-        // letter-spacing: 3px;
-        // font-size: 0.8rem
+  &__Primary {
+    p {
+      @include paragraph;
+      color: $white;
+      // text-transform: uppercase;
+      // letter-spacing: 3px;
+      // font-size: 0.8rem
     }
 
-    h1{
-        @include h2;
-        color: $white;
+    h1 {
+      @include h2;
+      color: $white;
     }
-
 
     .input {
+      display: flex;
+      flex-direction: column;
+      margin: 2rem 0 1rem 0;
+      .errorMessage {
+        margin: 0;
+        position: relative;
+        top: -0.1rem;
+        background-color: $softRed;
+        font-style: italic;
+        font-size: 0.6rem;
+        text-align: left;
+        padding: 0 0.5rem;
+      }
+    }
+
+    .error {
+      border: 3px solid $softRed;
+    }
+
+    input {
+      padding: 0.8rem 1rem;
+      border: 3px solid #efefef;
+      border-radius: 5px;
+      font-family: $fontFamily;
+      font-weight: $bold;
+
+      &:focus {
+        border: 3px solid $softRed;
+      }
+    }
+
+    button {
+      display: block;
+      width: 100%;
+    }
+
+    .btn {
+      box-shadow: none;
+      &:hover {
+        background-color: $white;
+      }
+    }
+  }
+
+  &__Links {
+    background-color: $veryDarkBlue;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 2rem;
+    padding: 2rem;
+
+      .nav__links {
         display: flex;
         flex-direction: column;
-        margin: 2rem 0 1rem 0;
-        .errorMessage{
-            margin: 0;
-            position: relative;
-            top: -0.1rem;
-            background-color: $softRed;
-            font-style: italic;
-            font-size: 0.6rem;
-            text-align: left;
-            padding: 0 0.5rem;
-            
+        gap: 2rem;
+
+        a {
+          color: $white;
         }
-    }
+      }
 
-    .error{
-        border: 3px solid $softRed;
+      .nav__icons {
+        display: flex;
+        gap: 2rem;
+      }
     }
-
-    input{
-        padding: 0.8rem 1rem;
-        border: 3px solid #EFEFEF;
-        border-radius: 5px;
-        font-family: $fontFamily;
-        font-weight: $bold;
-        
-    &:focus{
-        border: 3px solid $softRed;
-    }
-    }
-    
-
-    button{
-        display: block;
-        width: 100%;
-    }
-
-    .btn{
-        box-shadow: none;
-        &:hover{
-                    background-color: $white;
-        }
-    }
-    
-}
+  }
