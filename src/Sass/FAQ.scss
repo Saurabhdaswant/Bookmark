@@ -1,6 +1,11 @@
 @import "variable";
 
 .Faq{
+
+    width: 90%;
+    max-width: 1600px;
+    margin: 0 auto;
+
     &__head{
 
         @include Flexing;

@@ -1,9 +1,11 @@
 @import "variable";
 
 .features{
+    width: 90%;
+    max-width: 1600px;
+    margin: 10rem auto;
 
     @include Flexing;
-    margin: 10rem 0;
 
     &__about {
         h1{
