@@ -1,77 +1,94 @@
 @import "variable";
 
 .Home {
+  width: 80%;
+  max-width: 1600px;
+  margin: 0 auto;
 
-    width: 90%;
-    max-width: 1600px;
-    margin: 0 auto;
+  header {
+    display: flex;
+    justify-content: space-between;
 
-    header {
-        display: flex;
-        justify-content: space-between;
+    padding-top: 2rem;
 
-        padding-top: 2rem;
+    nav {
+      display: flex;
+      align-items: center;
 
-        nav {
-            display: flex;
-            align-items: center;
+      ul {
+        display: none;
 
-            ul {
-            display: none;
+        a {
+          color: $veryDarkBlue;
 
-                a {
-                    color: $veryDarkBlue;
-
-                    &:hover{
-                        color: $softRed;
-                    }
-                }
-
-                @media (min-width: 800px) {
-                display: flex;
-                justify-content: space-between;
-
-                gap: 4rem;
-                margin-right: 4rem;
-                }
-            }
+          &:hover {
+            color: $softRed;
+          }
         }
+
+        @media (min-width: 800px) {
+          display: flex;
+          justify-content: space-between;
+
+          gap: 4rem;
+          margin-right: 4rem;
+        }
+      }
     }
+  }
 
-    section {
-        display: flex;
-        flex-direction: column-reverse;
-    }
-
-
-
+  section {
+    display: flex;
+    flex-direction: column-reverse;
 
     .about {
-        @include Flexing;
+      @include Flexing;
 
+      gap: 1rem;
+      h1 {
+        @include h1;
+      }
+      p {
+        @include paragraph;
+      }
+      &__cta {
+        display: flex;
         gap: 1rem;
-        h1{
-            @include h1;
-        }
-        p{
-            @include paragraph
-        }
-        &__cta {
-            display: flex;
-            gap: 1rem;
-        }
+      }
+
+      @include tablet {
+        max-width: 600px;
+        align-items: start;
+        text-align: left;
+        padding-top: 4rem;
+      }
     }
-        .bookmarkBanner {
-            height: 20rem;
-            // overflow: hidden;
+    .bookmarkBanner {
+      height: 20rem;
 
-            svg {
-                width: 20rem;
-                height: 20rem;
-            }
+      svg {
+        width: 100%;
+        max-width: 20rem;
+        max-height: 20rem;
+      }
 
-            .rounded {
-                @include rounded;
-            }
+      //   .rounded {
+      //     @include rounded;
+      //   }
+      @include tablet {
+        svg {
+          width: 100%;
+          max-width: 80rem;
+          max-height: 50rem;
         }
+      }
+    }
+
+    @include tablet {
+      flex-direction: row;
+      padding: 8rem 0;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
 }

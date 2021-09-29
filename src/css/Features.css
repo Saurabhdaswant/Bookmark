@@ -1,4 +1,7 @@
 .features {
+  width: 90%;
+  max-width: 1600px;
+  margin: 10rem auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -10,7 +13,6 @@
       -ms-flex-align: center;
           align-items: center;
   text-align: center;
-  margin: 10rem 0;
 }
 
 .features__about h1 {
@@ -60,7 +62,7 @@
   height: 25rem;
 }
 
-.features__main__details__img svg {
+.features__main__details__img img {
   width: 20rem;
   height: 20rem;
 }

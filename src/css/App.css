@@ -110,12 +110,6 @@ q {
   quotes: "" "";
 }
 
-.App {
-  width: 90%;
-  max-width: 1600px;
-  margin: 0 auto;
-}
-
 a {
   text-decoration: none;
   text-transform: uppercase;
@@ -167,18 +161,6 @@ a {
 .btn--softBlue:hover {
   color: #5368df;
   border: 3px solid #5368df;
-}
-
-.rounded {
-  position: relative;
-  bottom: 13rem;
-  left: 3rem;
-  z-index: -5;
-  width: 300px;
-  height: 170px;
-  background-color: #5368df;
-  border-start-start-radius: 50rem;
-  border-bottom-left-radius: 50rem;
 }
 
 .rounded--right {

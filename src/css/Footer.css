@@ -1,0 +1,125 @@
+.Footer {
+  padding: 2rem 1rem;
+  max-width: 1600px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  background-color: #5368df;
+}
+
+.Footer__Primary p {
+  color: #9194a1;
+  line-height: 1.5;
+  margin: 1rem 0;
+  font-size: clamp(1rem, 4.5vw, 1.5rem);
+  color: #ffffff;
+}
+
+.Footer__Primary h1 {
+  font-size: clamp(1.5rem, 5vw, 2rem);
+  color: #ffffff;
+}
+
+.Footer__Primary .input {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 2rem 0 1rem 0;
+}
+
+.Footer__Primary .input .errorMessage {
+  margin: 0;
+  position: relative;
+  top: -0.1rem;
+  background-color: #fa5757;
+  font-style: italic;
+  font-size: 0.6rem;
+  text-align: left;
+  padding: 0 0.5rem;
+}
+
+.Footer__Primary .error {
+  border: 3px solid #fa5757;
+}
+
+.Footer__Primary input {
+  padding: 0.8rem 1rem;
+  border: 3px solid #efefef;
+  border-radius: 5px;
+  font-family: "Rubik", sans-serif;
+  font-weight: 500;
+}
+
+.Footer__Primary input:focus {
+  border: 3px solid #fa5757;
+}
+
+.Footer__Primary button {
+  display: block;
+  width: 100%;
+}
+
+.Footer__Primary .btn {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.Footer__Primary .btn:hover {
+  background-color: #ffffff;
+}
+
+.Footer__Links {
+  background-color: #252b46;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  gap: 2rem;
+  padding: 2rem;
+}
+
+.Footer__Links .nav__links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 2rem;
+}
+
+.Footer__Links .nav__links a {
+  color: #ffffff;
+}
+
+.Footer__Links .nav__icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 2rem;
+}
+/*# sourceMappingURL=Footer.css.map */
