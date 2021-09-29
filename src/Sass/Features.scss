@@ -96,6 +96,7 @@
         }
       }
       @include tablet {
+        flex-direction: row;
         justify-content: space-between;
         padding: 4rem 0;
         align-items: center;
