@@ -2,42 +2,71 @@
 
 .extension{
     margin: 0 auto;
-
     @include Flexing;
-    h1{
-        @include h1;
-        @include h2;
-    }
+
     p{
         @include paragraph;
     }
-    h2{
-        font-size: 1.5rem;
-        color: $veryDarkBlue;
-        font-weight: $bold;
+
+    &__head{
+        margin: 0 auto;
+        max-width: 700px;
+        h1{
+            @include h1;
+            @include h2;
+        }
+
     }
 
-    &__main__card{
-        box-shadow: 0px 16px 30px rgba(0, 0, 0, 0.2);
-        border-radius: 1rem;
-        margin: 3rem 0;
-        padding: 1rem 0 ;
 
-        & img {
-            padding: 2rem 0;
+    &__main{
+
+        h2{
+            font-size: 1.5rem;
+            color: $veryDarkBlue;
+            font-weight: $bold;
+        }
+        &__card{
+            max-width: 320px;
+            box-shadow: 0px 16px 30px rgba(0, 0, 0, 0.2);
+            border-radius: 1rem;
+            margin: 3rem 0;
+            padding: 1rem 0 ;
+    
+            & img {
+                padding: 2rem 0;
+            }
+    
+            & h1 , p {
+                line-height: 0;
+            }
+    
+            & svg {
+                margin: 1rem 0;
+            }
+            & button{
+                margin: 0.5rem 0;
+                padding: 1rem 2rem;
+                font-size: 1rem;
+            }
         }
 
-        & h1 , p {
-            line-height: 0;
-        }
+        @media screen and (min-width:500px){
+            flex-wrap: wrap;
+          }
 
-        & svg {
-            margin: 1rem 0;
+
+        @include tablet{
+            display: flex;
+            justify-content: space-evenly;
+            text-align: center;
+
+            &__card{
+                max-width: 300px;
+            }
         }
-        & button{
-            margin: 0.5rem 0;
-            padding: 1rem 2rem;
-            font-size: 1rem;
-        }
+    }
+    @include tablet{
+        align-items: unset;
     }
 }
