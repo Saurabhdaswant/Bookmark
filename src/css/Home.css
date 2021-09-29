@@ -115,7 +115,7 @@
   .Home section .bookmarkBanner svg {
     width: 100%;
     max-width: 80rem;
-    max-height: 80rem;
+    max-height: 50rem;
     margin-left: 7rem;
   }
 }
@@ -126,7 +126,7 @@
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    padding: 8rem 0;
+    padding: 4rem 0;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
