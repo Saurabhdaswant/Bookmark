@@ -21,7 +21,7 @@ function Features() {
             <div className="features__main">
                 <div className="features__main__theFeature">
                     {
-                        data.map(item => <p onClick={(e) => handleClick(e)} >{item.title}</p>)
+                        data.map(item => <div > <p  onClick={(e) => handleClick(e)} >{item.title}</p> </div>)
                     }
                 </div>
                 {data.filter(feature => feature.title === state)
