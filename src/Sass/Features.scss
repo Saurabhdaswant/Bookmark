@@ -6,8 +6,6 @@
 
   &__about {
     @include Flexing;
-    margin: 0 auto;
-    max-width: 700px;
     h1 {
       @include h1;
       @include h2;
