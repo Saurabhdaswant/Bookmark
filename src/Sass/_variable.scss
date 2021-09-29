@@ -50,4 +50,8 @@ $semiBold:400;
     text-align: center;
   }
 
-  
+  @mixin tablet { 
+    @media screen and (min-width:800px){
+      @content;
+    }
+  }
