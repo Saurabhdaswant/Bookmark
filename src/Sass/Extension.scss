@@ -1,9 +1,6 @@
 @import "variable";
 
 .extension{
-
-    width: 90%;
-    max-width: 1600px;
     margin: 0 auto;
 
     @include Flexing;

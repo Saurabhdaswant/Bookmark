@@ -169,4 +169,9 @@ a {
   border-top-right-radius: 50rem;
   border-bottom-right-radius: 50rem;
 }
+
+.extension, .Faq, .features, .Home {
+  width: 80%;
+  max-width: 1600px;
+}
 /*# sourceMappingURL=App.css.map */
