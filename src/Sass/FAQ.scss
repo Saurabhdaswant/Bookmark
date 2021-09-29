@@ -4,7 +4,6 @@
     margin: 10rem auto;
 
     &__head{
-
         @include Flexing;
         h1{
             @include h1;
@@ -18,13 +17,12 @@
     &__main{
         &__faqCard{
             .faqCard__question{
-    
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
                     p{
                         @include h1;
-                        font-size: 1rem;
+                        font-size: 1.3rem;
                     }
     
                     button{
@@ -35,6 +33,10 @@
                         font-size: 1.5rem;
                         cursor: pointer;
                     }
+
+                    @include tablet{
+                        padding: 1rem 0;
+                    }
                 }
     
                 .faqCard__answer{
@@ -43,7 +45,7 @@
                     }
             }
     
-            border-bottom: 1px solid #f1f1f1da ;
+            border-bottom: 1px solid #f1f1f1 ;
             padding: 0.5rem;
         }
 
