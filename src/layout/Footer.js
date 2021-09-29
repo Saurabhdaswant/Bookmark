@@ -39,9 +39,11 @@ function Footer() {
               />
               {error && <p className="errorMessage"> {errorMessage} </p>}
             </div>
+            <div className="button">
             <button type="submit" id="submit" className="btn btn--softRed">
               Contact Us
             </button>
+            </div>
           </form>
         </div>
       </div>

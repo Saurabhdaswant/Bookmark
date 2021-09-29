@@ -14,9 +14,6 @@
     p {
       @include paragraph;
       color: $white;
-      // text-transform: uppercase;
-      // letter-spacing: 3px;
-      // font-size: 0.8rem
     }
 
     h1 {
@@ -24,49 +21,73 @@
       color: $white;
     }
 
-    .input {
-      display: flex;
-      flex-direction: column;
-      margin: 2rem 0 1rem 0;
-      .errorMessage {
-        margin: 0;
-        position: relative;
-        top: -0.1rem;
-        background-color: $softRed;
-        font-style: italic;
-        font-size: 0.6rem;
-        text-align: left;
-        padding: 0 0.5rem;
+    form{
+
+      .input {
+        display: flex;
+        flex-direction: column;
+        margin: 2rem 0 1rem 0;
+        .errorMessage {
+          margin: 0;
+          position: relative;
+          top: -0.1rem;
+          background-color: $softRed;
+          font-style: italic;
+          font-size: 0.6rem;
+          text-align: left;
+          padding: 0 0.5rem;
+        }
       }
-    }
-
-    .error {
-      border: 3px solid $softRed;
-    }
-
-    input {
-      padding: 0.8rem 1rem;
-      border: 3px solid #efefef;
-      border-radius: 5px;
-      font-family: $fontFamily;
-      font-weight: $bold;
-
-      &:focus {
+  
+      .error {
         border: 3px solid $softRed;
       }
-    }
+  
+      input {
+        padding: 0.8rem 1rem;
+        border: 3px solid #efefef;
+        border-radius: 5px;
+        font-family: $fontFamily;
+        font-weight: $bold;
+  
+        &:focus {
+          border: 3px solid $softRed;
+        }
+      }
+  
+      button {
+        display: block;
+        width: 100%;
+      }
+  
+      .btn {
+        box-shadow: none;
+        &:hover {
+          background-color: $white;
+        }
+      }
 
-    button {
-      display: block;
-      width: 100%;
-    }
+      @include tablet{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
 
-    .btn {
-      box-shadow: none;
-      &:hover {
-        background-color: $white;
+        & .input{
+          margin: 3rem 0;
+          .errorMessage {
+            position: relative;
+            padding: 0 1.17rem;
+            width: 100%;
+          }
+        }
+
+        input {
+          width: 100%;
+        }
       }
     }
+
+
   }
 
   &__Links {
