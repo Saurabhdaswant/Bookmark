@@ -38,11 +38,15 @@
           cursor: pointer;
           padding-bottom: 0.7rem;
           &:hover {
-            border-bottom: 4px solid $softRed;
+            color: $softRed;
           }
           @include tablet {
             padding: 0.8rem 2rem;
           }
+        }
+
+        .active {
+          border-bottom: 4px solid $softRed;
         }
 
         @include tablet {

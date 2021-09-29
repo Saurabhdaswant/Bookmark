@@ -77,13 +77,17 @@
 }
 
 .features__main__theFeature div p:hover {
-  border-bottom: 4px solid #fa5757;
+  color: #fa5757;
 }
 
 @media screen and (min-width: 800px) {
   .features__main__theFeature div p {
     padding: 0.8rem 2rem;
   }
+}
+
+.features__main__theFeature div .active {
+  border-bottom: 4px solid #fa5757;
 }
 
 @media screen and (min-width: 800px) {

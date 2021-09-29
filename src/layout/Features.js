@@ -21,9 +21,9 @@ function Features() {
             <div className="features__main">
                 <div className="features__main__theFeature">
                     {
-                        data.map(item => <div > <p  onClick={(e) => handleClick(e)} >{item.title}</p> </div>)
+                        data.map(item => <div > <p  className={ item.title === state && `active`}  onClick={(e) => handleClick(e)} >{item.title}</p> </div>)
                     }
-                </div>
+                </div>                                    
                 {data.filter(feature => feature.title === state)
                     .map(({ id, info, img, title }) => <div key={id} className="features__main__details">
                         <div className="features__main__details__img">
