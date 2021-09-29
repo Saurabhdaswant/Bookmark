@@ -1,12 +1,15 @@
 @import "variable";
 
 .features {
-  width: 90%;
+  width: 80%;
   max-width: 1600px;
-  margin: 10rem auto;
+  margin: 5rem auto;
   @include Flexing;
 
   &__about {
+    @include Flexing;
+    margin: 0 auto;
+    max-width: 700px;
     h1 {
       @include h1;
       @include h2;
@@ -18,34 +21,61 @@
 
   &__main {
     &__theFeature {
+      margin: 2rem auto;
       display: flex;
       flex-direction: column;
       text-align: center;
 
-      & p {
-        text-transform: capitalize;
-        line-height: 3;
-        color: $veryDarkBlue;
-        border-top: 2px solid $grayishBlue;
-        font-weight: $bold;
-        cursor: pointer;
-
-        &:hover {
-          border-bottom: 4px solid $softRed;
+      & div {
+        border-bottom: 1px solid $grayishBlue;
+        & p {
+          display: inline;
+          text-transform: capitalize;
+          line-height: 3;
+          color: $veryDarkBlue;
+          font-weight: $bold;
+          cursor: pointer;
+          padding-bottom: 0.7rem;
+          &:hover {
+            border-bottom: 4px solid $softRed;
+          }
+          @include tablet {
+            padding: 0.8rem 2rem;
+          }
         }
 
-        &:nth-child(3) {
-          border-bottom: 2px solid $grayishBlue;
+        @include tablet {
+          margin: 0 auto;
+          border-bottom: 1px solid transparent;
         }
+      }
+
+      @include tablet {
+        flex-direction: row;
+        justify-content: space-between;
+        border-bottom: none;
+        margin: 2rem auto;
+        border-bottom: 1px solid rgba(192, 186, 186, 0.514);
       }
     }
 
     &__details {
+      display: flex;
+      flex-direction: column;
+      gap: 4rem;
       &__img {
-        height: 25rem;
         img {
-          width: 20rem;
-          height: 20rem;
+          width: 100%;
+          max-width: 20rem;
+          max-height: 20rem;
+
+          @include tablet {
+            & {
+              width: 100%;
+              max-width: 60rem;
+              max-height: 30rem;
+            }
+          }
         }
       }
 
@@ -58,9 +88,22 @@
           @include paragraph;
           margin-bottom: 1rem;
         }
+
+        @include tablet {
+          max-width: 500px;
+          text-align: left;
+          padding-top: 4rem;
+        }
+      }
+      @include tablet {
+        justify-content: space-between;
+        padding: 4rem 0;
+        align-items: center;
       }
     }
   }
+
+  align-items: unset;
 }
 
 .features__main__details__img__rounded {
