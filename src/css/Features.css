@@ -50,6 +50,7 @@
 }
 
 .features__main__theFeature {
+  max-width: 800px;
   margin: 2rem auto;
   display: -webkit-box;
   display: -ms-flexbox;
