@@ -64,7 +64,7 @@
       }
     }
     .bookmarkBanner {
-      height: 20rem;
+    //   height: 20rem;
 
       svg {
         width: 100%;
@@ -79,7 +79,9 @@
         svg {
           width: 100%;
           max-width: 80rem;
-          max-height: 50rem;
+          max-height: 80rem;
+
+          margin-left:7rem ;
         }
       }
     }
