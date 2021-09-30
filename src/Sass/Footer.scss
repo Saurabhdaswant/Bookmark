@@ -93,37 +93,23 @@
   &__Links {
     background-color: $veryDarkBlue;
     display: flex;
-    flex-direction: column;
     justify-content: center;
-    align-items: center;
-    text-align: center;
-    gap: 2rem;
-    padding: 2rem;
-
-      .nav__links {
-        display: flex;
-        flex-direction: column;
-        gap: 2rem;
-
-        a {
-          color: $white;
-
-          &:hover {
-            @include hover;
-          }
-        }
-      }
 
       .nav__icons {
+        a{
+          color: $white;
+          padding: 0 0.1rem ;
+          font-size : 1.5rem;
+        }
+        p{
+          @include paragraph;
         display: flex;
-        gap: 2rem;
-      }
+        align-items: center;
 
-      @include tablet{
-        flex-direction: row;
-        justify-content: space-between;
-        .nav__links{
-          flex-direction: row;
+        img{
+          max-width: 2rem;
+          padding: 0 0.5rem
+        }
         }
       }
     }

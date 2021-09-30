@@ -12,10 +12,9 @@ function Footer() {
     e.preventDefault();
     if (!state || state === " " || !validator.isEmail(state)) {
       setError(true);
-      console.log("its truee");
     } else {
       setError(false);
-      setstate("")
+      // setstate("")
     }
   };
 
@@ -33,8 +32,8 @@ function Footer() {
                 onChange={(e) => setstate(e.target.value)}
                 type="text"
                 id="email"
-                value={state}
                 placeholder="Enter email"
+                value={state}
                 className={error && `error`}
               />
               {error && <p className="errorMessage"> {errorMessage} </p>}
