@@ -6,6 +6,7 @@ import { useState } from "react";
 function Features() {
 
     const [state, setstate] = useState("Simple Bookmarking")
+    const [readMore , setReadMore] = useState(false)
 
     const handleClick = (e) => {
         const featureTitle = e.target.innerHTML
@@ -32,8 +33,8 @@ function Features() {
                         </div>
                         <div className="features__main__details__about">
                             <h1>{title}</h1>
-                            <p>{info}</p>
-                            <button className="btn btn--softBlue" >Show More</button>
+                            <p>{ readMore ?  info : `${info.substring(0,100)}....`}</p>
+                            <button className="btn btn--softBlue" onClick={ ()=> setReadMore(!readMore) } > { readMore ? "show less" : "More Info"} </button>
                         </div>
                     </div>)}
             </div>
