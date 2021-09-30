@@ -9,7 +9,7 @@ function FAQ() {
     const [show, setShow] = useState(false);
 
     return (
-        <div className="Faq">
+        <div className="Faq" id="FAQ">
             <div className="Faq__head">
                 <h1>Frequently Asked Questions</h1>
                 <p>Here are some of our FAQs. if you have any other questions you</p>

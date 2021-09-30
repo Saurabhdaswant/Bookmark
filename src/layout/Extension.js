@@ -4,7 +4,7 @@ import Card from "./components/Card"
 
 function Extension() {
     return (
-        <div className="extension" >
+        <div className="extension" id="Extension" >
             <div className="extension__head" >
                 <h1>Download the extension</h1>
                 <p>We've got more browsers in the pipeline. Please do let us know if you've got a favourite you'd like us to priotize.</p>
