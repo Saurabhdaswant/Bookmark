@@ -1,18 +1,14 @@
 import { useState } from "react"
+import { FaCaretDown, FaCaretUp } from "react-icons/fa";
 function FaqCard({question , answer }) {
 
     const [state, setstate] = useState(false);
-
-    const handleClick = () => {
-      setstate(!state);
-    };
-
 
     return (
         <div className="Faq__main__faqCard">
             <div className="faqCard__question">
                 <p>{question}</p>
-                <button onClick={ ()=> handleClick() } >v</button>
+                <button onClick={ ()=> setstate(!state) } > { state ? <FaCaretUp/> : <FaCaretDown/> } </button>
             </div>
             <div className="faqCard__answer">
                { state &&  <p>{answer}</p>}
