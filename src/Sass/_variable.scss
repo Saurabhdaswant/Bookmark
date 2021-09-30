@@ -55,3 +55,7 @@ $semiBold:400;
       @content;
     }
   }
+
+  @mixin hover {
+    color: $softRed;
+  }
