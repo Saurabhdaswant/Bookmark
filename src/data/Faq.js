@@ -2,7 +2,7 @@ const data = [
     {
       id: 1,
       question: "What is Bookmark?",
-      answer: "Yes, see the docs on styling"
+      answer: " narrow piece of card, etc. that you put between the pages of a book so that you can find the same place again easily"
     },
     {
       id: 2,
@@ -13,22 +13,22 @@ const data = [
     {
       id: 3,
       question: "Is there a mobile app?",
-      answer: "React can be used to power animations"
+      answer: "Yes! on both Android and iOS"
     },
     {
       id: 4,
       question: "What about other Chromium browsers?",
-      answer: "No! Check out “React Without JSX” to learn more."
+      answer: "idk about it"
     },
     {
         id: 5,
         question: "What ?",
-        answer: "No! Check out “React Without JSX” to learn more."
+        answer: "uctus eros eliquest convailis ultricies. Mauris augue."
       },
       {
         id: 6,
-        question: "about other Chromium browsers?",
-        answer: "No! Check out “React Without JSX” to learn more."
+        question: "iquest convailis ultricies. Mauris augue mass, lorem20  Vi",
+        answer: "uctus eros eliquest convailis ultricies. Mauris augue"
       },
     
   ];
