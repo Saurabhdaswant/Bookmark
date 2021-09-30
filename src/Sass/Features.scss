@@ -34,7 +34,7 @@
           cursor: pointer;
           padding-bottom: 0.7rem;
           &:hover {
-            color: $softRed;
+            @include hover;
           }
           @include tablet {
             padding: 0.8rem 2rem;

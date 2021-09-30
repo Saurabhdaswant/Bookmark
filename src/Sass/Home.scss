@@ -20,7 +20,7 @@
           color: $veryDarkBlue;
 
           &:hover {
-            color: $softRed;
+            @include hover;
           }
         }
 
