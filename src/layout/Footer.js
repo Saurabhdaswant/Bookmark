@@ -15,8 +15,7 @@ function Footer() {
       console.log("its truee");
     } else {
       setError(false);
-      console.log(state);
-      console.log("its flase now");
+      setstate("")
     }
   };
 
@@ -34,6 +33,7 @@ function Footer() {
                 onChange={(e) => setstate(e.target.value)}
                 type="text"
                 id="email"
+                value={state}
                 placeholder="Enter email"
                 className={error && `error`}
               />
