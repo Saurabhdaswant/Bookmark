@@ -69,16 +69,12 @@
         max-width: 20rem;
         max-height: 20rem;
       }
-
-      //   .rounded {
-      //     @include rounded;
-      //   }
       @include tablet {
         svg {
           width: 100%;
           max-width: 80rem;
           max-height: 50rem;
-          margin-left:7rem ;
+          margin-top: 3rem;
         }
       }
     }
